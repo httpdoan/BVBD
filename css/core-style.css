@@ -963,15 +963,16 @@ select.form-control:not([size]):not([multiple]) {
     max-width: 50%;
     position: relative;
     z-index: 1;
-    padding-left: 40px;
+    padding-left: 25px;
     margin-bottom: 15px;
     font-size: 16px;
+    line-height: 1.2;
 }
 
 .medica-about-text ul li:before {
     position: absolute;
     z-index: 1;
-    top: 10px;
+    top: 6px;
     left: 0;
     width: 8px;
     height: 8px;
@@ -1272,7 +1273,7 @@ select.form-control:not([size]):not([multiple]) {
 .breadcrumb-item.active,
 .breadcrumb-item a,
 .breadcrumb-item {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
@@ -1588,7 +1589,7 @@ span.accor-open {
 }
 
 .single-accordion .accordion-content p {
-    padding: 20px 15px 5px;
+    padding: 15px 15px 5px;
     margin-bottom: 0;
 }
 

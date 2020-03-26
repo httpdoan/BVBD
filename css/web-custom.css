@@ -315,16 +315,26 @@ img.img-logo {
 
 .breadcumb-title span {
     color: #0f28d0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.6);
     padding: 3px 5px;
 }
 
 .nav-breadcrumb {
     padding: 2px 5px;
     display: inline-block;
-    background-color: rgba(140, 140, 140, 0.5)
+    background-color: rgba(140, 140, 140, 0.6)
 }
 
 .medica-about-text h2 {
     line-height: 1.5;
+}
+
+.row-space {
+    display: block;
+    height: 20px;
+    width: 100%;
+}
+
+.breadcrumb-item a:hover {
+    color: #3de6fa;
 }
