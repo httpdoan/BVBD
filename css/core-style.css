@@ -920,7 +920,7 @@ select.form-control:not([size]):not([multiple]) {
 .catagories-menu li a:focus {
     padding-left: 20px;
     border-bottom: 1px solid #2f88fd;
-    /* color: #2f88fd; */
+    color: #2f88fd;
 }
 
 .department-menu li:last-child a,
@@ -1535,7 +1535,7 @@ textarea.form-control {
 }
 
 .single-accordion h6 a {
-    background-color: #1d1d1d;
+    /* background-color: #1d1d1d; */
     border-radius: 0;
     color: #fff;
     display: block;
@@ -1545,10 +1545,15 @@ textarea.form-control {
     font-size: 14px;
     text-transform: capitalize;
     font-weight: 500;
+
+    background: #243eff;
+    background: -webkit-linear-gradient(to right, #3de6fa, #243eff);
+    background: -webkit-linear-gradient(left, #3de6fa, #243eff);
+    background: linear-gradient(to right, #3de6fa, #243eff);
 }
 
 .single-accordion h6 a.collapsed {
-    background-color: #2f88fd;
+    background: #8a8a8a;
     color: #fff;
 }
 
