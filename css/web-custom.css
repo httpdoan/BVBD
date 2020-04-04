@@ -1,10 +1,11 @@
+
 .row:before,
 .row:after {
     display: none !important;
 }
-
+.single-accordion h6 a span{top: calc(50% - 8px);}
 i.fa {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 img.img-logo {
@@ -21,6 +22,8 @@ img.img-logo {
 
 .h-mn {
     height: 90px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .mb-20 {
@@ -67,10 +70,11 @@ img.img-logo {
     display: table-cell;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 18.3px;
+    font-size: 18px;
     text-transform: uppercase;
-    padding-left: 15px;
+    padding-left: 10px;
     color: #101010;
+    letter-spacing: -1px;
 }
 
 .navbar-brand.logo-link span b {
@@ -414,7 +418,7 @@ img.img-logo {
 }
 .item-news .box-header {
     font-size: 18px;
-    padding: 25px 12px 2.2rem;
+    padding: 22px 20px 2.2rem;
     color: #2547ff;
     font-weight: 600;
     display: -webkit-box;
@@ -441,12 +445,12 @@ img.img-logo {
     top: 61px
 }
 .item-news .item{
-        padding: 5px 15px 5px;
+    padding: 5px 15px 5px;
     display: table;
     width: 100%;
 }
- .story__thumb {
-        width: 163px;
+.story__thumb {
+    width: 163px;
     height: 110px;
     float: left;
     margin: 3px 15px 10px 0;
@@ -504,4 +508,197 @@ ul.list-newsItem li a:hover{
     color: #a70000;
     border-bottom: 1px solid #a70000;
     margin-left: 10px;
+}
+.moreless.more{ 
+    display: block; 
+    background: transparent; 
+    text-decoration: none; 
+    color: #f00; 
+    font-weight: 500;
+    font-size: 14px; 
+    text-transform: initial;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-top: 10px;
+    width: 95px;
+}
+.moreless.less{ 
+    display: inline-block; 
+    background: transparent; 
+    text-decoration: none; 
+    color: #f00; 
+    font-weight: 500;
+    font-size: 14px; 
+    text-transform: initial; 
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.moreless.more:hover, .moreless.less:hover{
+    color: #001db9;
+    border-bottom: 1px solid #001db9;
+    margin-left: 10px;
+    text-decoration: none
+}
+.post-thumb h4{
+    font-weight: 600
+}
+.dropdown-menu.right-0{
+    left: unset;
+    right: 0
+}
+.header-area .main-menu .nav-link.more_mn{
+    text-transform: unset;
+    font-size: 14px;
+    color: red;
+}
+.ti-more_mn{
+    font-weight: 900;
+    color: red;
+    position: relative;
+    top: 2px;
+    left: 2px
+}
+.dropdown-toggle.more_mn:after{
+    display: none
+}
+
+/* css tab */
+.tabbed {
+    overflow-x: hidden; /* so we could easily hide the radio inputs */
+    margin: 32px 0;
+    padding-bottom: 16px;
+}
+.tabbed [type="radio"] {
+    /* hiding the inputs */
+    display: none;
+}
+.tabs {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+.tab > label {
+    display: block;
+    margin-bottom: -1px;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.tab:hover label {
+    border-top-color: #333;
+    color: #333;
+}
+.tab-content {
+    display: none;
+    color: #777;
+}
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
+    border-bottom-color: #fff;
+    border-top-color: #2859fe;
+    background: #fff;
+    color: #222;
+}
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+    display: block;
+}
+/* end css tab */
+
+/* accordion */
+.accordion {
+  margin: 0 auto;
+}
+
+.toggle {
+  display: none;
+}
+
+.option {
+  position: relative;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #d7d7d7;
+}
+.option:last-child {
+    border-bottom: 0px solid #d7d7d7;
+}
+.title,
+.content {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.title {
+  background: #fff;
+  padding: 1em;
+  display: block;
+  color: #7A7572;
+  font-weight: bold;
+  cursor: pointer
+}
+.title:after, .title:before {
+  content: '';
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 2px;
+  height: 0.75em;
+  background-color: #7A7572;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.title:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+.content p {
+  margin: 0;
+  padding: 0.5em 1em 1em;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.content h4 {    
+  margin: 0;
+  padding: 0.5em 1em 0.5em;
+  font-size: 18px
+}
+
+.toggle:checked + .title
+/* .toggle:checked + .title + .content  */
+{
+  /* box-shadow: 3px 3px 6px #ddd, -3px 3px 6px #ddd; */
+  border-bottom: 1px dashed #36b3fc;
+}
+.toggle:checked + .title + .content {
+  max-height: 500px;
+}
+.toggle:checked + .title:before {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
 }
