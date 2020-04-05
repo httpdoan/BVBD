@@ -402,19 +402,16 @@ img.img-logo {
 .box-link a:hover{text-decoration: underline}
 
 .item-news{     
- position: relative;
- padding-top: 2px;
- padding-bottom: 5px;
- background: #fff;
- margin-bottom: 20px;
- overflow: auto;
- -webkit-border-top-left-radius: 8px;
- -webkit-border-top-right-radius: 8px;
- -moz-border-radius-topleft: 8px;
- -moz-border-radius-topright: 8px;
- border-top-left-radius: 8px;
- border-top-right-radius: 8px;
- min-height:  325px;
+   position: relative;
+   padding-top: 2px;
+   padding-bottom: 5px;
+   background: #fff;
+   margin-bottom: 20px;
+   overflow: auto;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   min-height:  325px;
 }
 .item-news .box-header {
     font-size: 18px;
@@ -584,6 +581,7 @@ ul.list-newsItem li a:hover{
     margin-bottom: -1px;
     padding: 12px 15px;
     border: 1px solid #ccc;
+    border-right: 0px solid;
     background: #eee;
     color: #666;
     font-size: 14px;
@@ -592,6 +590,9 @@ ul.list-newsItem li a:hover{
     letter-spacing: 0;
     cursor: pointer;
     transition: all 0.3s;
+}
+.tab:last-child > label {    
+    border-right: 1px solid #ccc;
 }
 .tab:hover label {
     border-top-color: #333;
@@ -629,25 +630,25 @@ ul.list-newsItem li a:hover{
   display: none;
 }
 
-.option {
+.accordion .option {
   position: relative;
   margin-bottom: 1em;
   border-bottom: 1px solid #d7d7d7;
 }
-.option:last-child {
+.accordion .option:last-child {
     border-bottom: 0px solid #d7d7d7;
 }
-.title,
-.content {
+.accordion .option .title,
+.accordion .option.content {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.title {
+.accordion .option .title {
   background: #fff;
   padding: 1em;
   display: block;
@@ -655,7 +656,10 @@ ul.list-newsItem li a:hover{
   font-weight: bold;
   cursor: pointer
 }
-.title:after, .title:before {
+.accordion .option .title:hover {
+    color: #36b3fc
+}
+.accordion .option .title:after, .title:before {
   content: '';
   position: absolute;
   right: 1.25em;
@@ -667,26 +671,27 @@ ul.list-newsItem li a:hover{
   transition: all 0.2s;
 }
 
-.title:after {
+.accordion .option .title:after {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.content {
+.accordion .option .content {
   max-height: 0;
   overflow: hidden;
   background-color: #fff;
 }
-.content p {
+.accordion .option .content p {
   margin: 0;
   padding: 0.5em 1em 1em;
   font-size: 0.9em;
   line-height: 1.5;
 }
-.content h4 {    
+.accordion .option .content h4 {    
   margin: 0;
   padding: 0.5em 1em 0.5em;
-  font-size: 18px
+  font-size: 17px;
+  color: #f00
 }
 
 .toggle:checked + .title
@@ -694,11 +699,16 @@ ul.list-newsItem li a:hover{
 {
   /* box-shadow: 3px 3px 6px #ddd, -3px 3px 6px #ddd; */
   border-bottom: 1px dashed #36b3fc;
+  color: #2547ff;
 }
 .toggle:checked + .title + .content {
   max-height: 500px;
 }
 .toggle:checked + .title:before {
   -webkit-transform: rotate(90deg) !important;
-          transform: rotate(90deg) !important;
+  transform: rotate(90deg) !important;
+}
+.dropdown-item span{
+    font-size: 10px;
+    padding-right: 5px;
 }

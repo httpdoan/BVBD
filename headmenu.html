@@ -1,0 +1,102 @@
+
+<!-- Top Header Area -->
+<div class="top-header-area gradient-background">
+	<div class="container h-100">
+		<div class="row h-100">
+			<div class="col-12 h-100">
+				<div class="h-100 d-md-flex justify-content-between align-items-center">
+					<div class="top-header-social-info">
+						<!-- <a href="#" data-toggle="tooltip" data-placement="left" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a> -->
+						<a href="#" data-toggle="tooltip" data-placement="left" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<!-- <i href="#" data-toggle="tooltip" data-placement="left" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a> -->
+						<!-- <a href="#" data-toggle="tooltip" data-placement="left" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a> -->
+						<a href="#" data-toggle="tooltip" data-placement="left" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="top-header-menu">
+						<nav class="top-menu">
+							<ul>
+								<li><a href="#"><i class="fa fa-map_" aria-hidden="true"></i>Liên lạc</a></li>
+								<li><a href="#"><i class="fa fa-envelope_" aria-hidden="true"></i> contact@benhvienbinhduong.org.vn</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Main Header Area -->
+<div class="main-header-area" id="stickyHeader">
+	<div class="container h-mn">
+		<div class="row h-mn align-items-center">
+			<div class="col-12 h-mn">
+				<div class="main-menu h-mn">
+					<nav class="navbar h-mn navbar-expand-lg">
+						<!-- Logo Area  -->
+						<a class="navbar-brand logo-link" href="_index.html">
+							<img class="img-logo" src="img/core-img/logo.png" title="Logo Bệnh viện Đa khoa Tỉnh Bình Dương" alt="Logo Bệnh viện Đa khoa Tỉnh Bình Dương">
+							<span>
+								Bệnh viện đa khoa <br /><b>tỉnh Bình Dương</b>
+							</span>
+						</a>
+
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#medicaMenu" aria-controls="medicaMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
+
+						<div class="collapse navbar-collapse" id="medicaMenu">
+							<!-- Menu Area -->
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="_index.html">Trang chủ <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giới thiệu</a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="_gioithieu.html"><span>►</span>Giới thiệu chung</a>
+										<a class="dropdown-item" href="_ls_hinhthanh_phattrien.html"><span>►</span>Lịch sử hình thành - phát triển</a>
+										<a class="dropdown-item" href="_cocautochuc.html"><span>►</span>Cơ cấu tổ chức</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./_nghien_cuu_khoa_hoc.html">Nghiên cứu khoa học</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="./_tintuc.html">Tin tức - sự kiện</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="services.html">Khoa - phòng chức năng</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle more_mn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Thêm <i class="ti-more ti-more_mn"></i></a>
+									<div class="dropdown-menu right-0" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="_giaiDapYHoc.html"><span>►</span>Giải đáp y học</a>
+										<a class="dropdown-item" href="_diaChiHuuIch.html"><span>►</span>Địa chỉ hữu ích về y tế</a>
+										<a class="dropdown-item" href="_ThuVienAnh.html"><span>►</span>Thư viện ảnh</a>
+									</div>
+								</li>
+							</ul>
+							<!-- Search Form -->
+							<div class="header-search-form ml-auto">
+								<form action="#">
+									<input type="search" class="form-control" placeholder="Input your keyword then press enter..." id="search" name="search">
+									<input class="d-none" type="submit" value="submit">
+								</form>
+							</div>
+							<!-- Search btn -->
+							<div id="searchbtn">
+								<i class="ti-search" aria-hidden="true"></i>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	// :: 7.0 Search Btn Active Code
+	$('#searchbtn').on('click', function() {
+        $('body').toggleClass('search-form-on');
+    })
+</script>

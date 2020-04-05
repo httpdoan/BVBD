@@ -119,9 +119,9 @@
     }
 
     // :: 7.0 Search Btn Active Code
-    $('#searchbtn').on('click', function() {
-        $('body').toggleClass('search-form-on');
-    })
+    // $('#searchbtn').on('click', function() {
+    //     $('body').toggleClass('search-form-on');
+    // })
 
     // :: 8.0 Progress Bar Active Code
     if ($.fn.barfiller) {
