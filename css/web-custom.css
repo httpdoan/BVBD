@@ -720,12 +720,18 @@ ul.list-newsItem li a:hover{
     border-bottom: 1px solid #e3e3e3;
     /* display: inline-block; */
     margin-bottom: 12px;
+    padding-bottom: 12px;
 }
 .list-research .story__thumb{
     width: 230px;
     height: 150px;
     background: #efefef;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
+    float: left;
+}
+.list-research .right-block{
+    float: left;
+        width: calc(100% - 250px);
 }
 .list-research .link:hover{
     color: #3190fd;
@@ -748,6 +754,10 @@ ul.list-newsItem li a:hover{
     text-decoration: none
 }
 
+.list-research .person span{
+    color: blue;
+    border-bottom: 1px solid #ccc
+}
 /* loadmore */
 .loadmore-block {
   display: block;
@@ -757,7 +767,7 @@ ul.list-newsItem li a:hover{
 }
 .content-loadmore {
   display: none;
-  height: 170px;
+  min-height: 170px;
 }
 #loadMore {
   width: 200px;
