@@ -677,7 +677,8 @@ ul.list-newsItem li a:hover{
 }
 
 .accordion .option .content {
-  max-height: 0;
+  /* max-height: 0; */
+  height: 0;
   overflow: hidden;
   background-color: #fff;
 }
@@ -701,8 +702,10 @@ ul.list-newsItem li a:hover{
   border-bottom: 1px dashed #36b3fc;
   color: #2547ff;
 }
-.toggle:checked + .title + .content {
-  max-height: 500px;
+/* .toggle:checked + .title + .content */
+.toggle:checked ~ .content
+{
+  height: auto;
 }
 .toggle:checked + .title:before {
   -webkit-transform: rotate(90deg) !important;
@@ -731,7 +734,7 @@ ul.list-newsItem li a:hover{
 }
 .list-research .right-block{
     float: left;
-        width: calc(100% - 250px);
+    width: calc(100% - 250px);
 }
 .list-research .link:hover{
     color: #3190fd;
@@ -801,4 +804,96 @@ ul.list-newsItem li a:hover{
 }
 .qa-form .row-send-qa{
     text-align: right
+}
+.medica-add{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.medica-add>div>div{
+    margin: 10px 3px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.12);
+    color: #554344;
+    transition: box-shadow .125s linear;
+    padding-top: 8px;
+    position: relative;
+    font-size: 15px
+}
+.medica-add>div>div:hover{
+    box-shadow:0 2px 6px 0 rgba(0,0,0,0.15);
+    border: 1px solid #dedede;
+}
+.medica-add>div>div:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #243eff;
+    background: -webkit-linear-gradient(to right, #3de6fa, #243eff);
+    background: -webkit-linear-gradient(left, #3de6fa, #243eff);
+    background: linear-gradient(to right, #3de6fa, #243eff);
+    transition: background-color 0.5s ease;
+}
+.medica-add>div>div:hover:after{
+    background: #fd7e14;
+    background: -webkit-linear-gradient(to right, #fd7e14, #ffc107);
+    background: -webkit-linear-gradient(left, #fd7e14, #ffc107);
+    background: linear-gradient(to right, #fd7e14, #ffc107);
+}
+.medica-add .title-add{
+    position: relative;
+    height: 70px;
+    display: table;
+    padding: 5px 10px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.accordion.medicaAdd .medica-add .title-add h4, .medica-add .title-add h4{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 21px;
+    font-weight: 500;
+    padding-right: 25px;
+    color: #262626;
+    padding: 0
+}
+.medica-add .title-add span{
+    position: absolute;
+    top: 28%;
+    right: 10px;
+    font-size: 24px
+}
+/* .medica-add>div>div:hover */
+/* .medica-add .title-add:hover span, 
+.medica-add .title-add:hover h4,  */
+.accordion.medicaAdd .medica-add>div>div:hover .title-add h4,
+.accordion.medicaAdd .medica-add>div>div:hover .title-add span
+{
+    color: #f00
+}
+.medica-add .add{
+    padding: 15px;
+    height: 112px
+}
+.medica-add .add a{
+    color: #2547ff
+}
+.accordion.medicaAdd .option .title{
+}
+.accordion.medicaAdd .toggle:checked + .title{
+    border-bottom: 0px dashed;
+    margin-bottom: 0px;
+    padding-bottom: 0em;
+}
+.accordion.medicaAdd .option .content p{
+    color: #292929;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 0px
 }

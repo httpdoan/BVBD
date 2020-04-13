@@ -63,11 +63,12 @@ h6 {
 
 p {
     color: #292929;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 2;
     line-height: 25px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 a:focus {

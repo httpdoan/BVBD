@@ -54,7 +54,7 @@
 
 
 
-<section class="medica-about-content section_padding_100">
+<section class="medica-about-content section_padding_70">
  <div class="container">
     		<!-- <div class="row align-items-center">
     		</div> -->
@@ -326,7 +326,7 @@
   $(".content-loadmore").slice(0, 5).show().css('display','inline-block');
   $("#loadMore").on("click", function(e){
     e.preventDefault();
-    $(".content-loadmore:hidden").slice(0, 5).slideDown(); 
+    $(".content-loadmore:hidden").slice(0, 5).slideDown().css('display','inline-block'); 
     if($(".content-loadmore:hidden").length == 0) {
       $("#loadMore").text("Không còn nội dung").addClass("noContent");
     }
