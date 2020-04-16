@@ -90,7 +90,7 @@
         border-radius: 6px;
         height: 35px;
         margin: 18px 0;
-        border: 2px solid #262626
+        border: 0px solid #262626
     }
     #medicaMenu {
         margin-top: -2px;
@@ -199,6 +199,7 @@
     .single-pie-bar {
         margin-bottom: 30px
     }
+    .navbar-toggler i.fa{font-size: 20px}
 }
 
 @media screen and (max-width: 479px){
@@ -212,5 +213,13 @@
     height: 53px;
     text-transform: unset;
     font-size: 19px
+    }
+    .h-mn{
+        height: 70px
+    }
+    .h-mn.fix-m{ padding-left: 20px; padding-right: 20px; }
+    img.img-logo{
+        max-width: unset;
+        width: 50px;
     }
 }
