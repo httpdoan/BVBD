@@ -8,7 +8,9 @@ D:\template\benh_vien\medica
 - bỏ: phần // :: 7.0 Search Btn Active Code ở file active.js và đem vào file headmenu.html
 -------------------------------
 
-+ phòng/ chức năng: tham khao: http://huunghihospital.vn/index.php?lang=vi
++ phòng/ chức năng: tham khao:
+http://www.benhvien115.com.vn/khoa > chi tiết
+ http://huunghihospital.vn/index.php?lang=vi
 http://huunghihospital.vn/index.php?option=com_k2&view=item&layout=item&id=256&Itemid=755&lang=vi
 
 + giải đáp y học:
