@@ -954,4 +954,22 @@ ul.list-newsItem li a:hover{
     font-size: 18px;
     font-weight: 500;
     color: #f00
+}.medica-contact-card.chat{
+        padding: 20px 30px;
+}
+.chat .single-contact-info .contact-icon{
+    -webkit-border-radius: 90px;
+-moz-border-radius: 90px;
+border-radius: 90px;
+    background: #fff;
+    padding: 15px;}
+.chat .single-contact-info .contact-icon img{
+    width: 38px;
+}
+.medica-contact-card.chat .contact-meta p{
+    font-size: 18px;
+    font-weight: 400
+}
+.medica-contact-card.chat .single-contact-info:hover .contact-meta p{
+    color: #38c3fb
 }

@@ -46,6 +46,7 @@
   transition: background 0.25s ease-out, visibility 0.01s 0s linear;
   visibility: visible;
   background: rgba(0, 0, 0, 0.95);
+  z-index: 100
 }
 .m-p-g__fullscreen-img {
   pointer-events: none;
