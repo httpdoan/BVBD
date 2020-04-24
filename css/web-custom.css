@@ -928,7 +928,7 @@ ul.list-newsItem li a:hover{
     display: table-cell;
     vertical-align: middle;
     color: #555;
-        -webkit-transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
     transition: all 500ms ease 0s;
 }
 .khoa-phong:hover span.text{color: #f00}
@@ -954,15 +954,17 @@ ul.list-newsItem li a:hover{
     font-size: 18px;
     font-weight: 500;
     color: #f00
-}.medica-contact-card.chat{
-        padding: 20px 30px;
+}
+.medica-contact-card.chat{
+    padding: 20px 30px;
 }
 .chat .single-contact-info .contact-icon{
     -webkit-border-radius: 90px;
--moz-border-radius: 90px;
-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
     background: #fff;
-    padding: 15px;}
+    padding: 15px;
+}
 .chat .single-contact-info .contact-icon img{
     width: 38px;
 }
@@ -972,4 +974,24 @@ border-radius: 90px;
 }
 .medica-contact-card.chat .single-contact-info:hover .contact-meta p{
     color: #38c3fb
+}
+
+/* search */
+.search .h3-title{
+    margin-bottom: 20px;
+}
+.search .widget-single-blog-post .widget-post-thumbnail{
+    width: auto;
+}
+.search .widget-single-blog-post .widget-post-content{
+    width: auto
+}
+.search .widget-single-blog-post .widget-post-thumbnail img{
+    max-width: 170px;
+    width: auto
+}
+.search .widget-single-blog-post{
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
