@@ -995,3 +995,10 @@ ul.list-newsItem li a:hover{
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
+.select-option option{
+    background: #ccc;
+    border-radius:15px;
+}
+.section_padding_b50 {
+    padding-bottom: 50px;
+}
